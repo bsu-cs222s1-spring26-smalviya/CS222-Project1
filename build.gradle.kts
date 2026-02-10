@@ -15,6 +15,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("com.jayway.jsonpath:json-path:2.9.0")
     implementation("org.slf4j:slf4j-simple:2.0.9")
+    implementation("net.minidev:json-smart:2.5.0")
 }
 
 tasks.test {

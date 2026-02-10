@@ -22,7 +22,7 @@ public class RevisionParser {
             }
         } catch (PathNotFoundException e) {
             return null;
-        }catch(Exception e){
+        } catch (Exception e) {
             throw new ParseException(e.getMessage());
         }
         return null;

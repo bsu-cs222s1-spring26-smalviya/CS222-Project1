@@ -42,8 +42,8 @@ public class RequesterTest {
 
 
 
-        assertTrue(body.trim().startsWith("{")); // 轻量检查：看起来像 JSON
-        assertTrue(body.contains("\"query\""));  // MediaWiki 返回通常会有 query 字段
-        assertTrue(body.contains("\"revisions\"")); // 你请求的是 revisions
+        assertTrue(body.trim().startsWith("{"));
+        assertTrue(body.contains("\"query\""));
+        assertTrue(body.contains("\"revisions\""));
     }
 }

@@ -24,6 +24,10 @@ public class Output {
     }
 
     public void printRedirect(String origin, String target) {
-        System.out.println("Redirect: " + origin + " -> " + target);
+        if (target != null) {
+            System.out.println("Redirect: " + origin + " -> " + target);
+        } else {
+            System.out.println("No Redirect found");
+        }
     }
 }

@@ -1,8 +1,8 @@
 package org.example;
 
 public class Revision {
-    private String user;
-    private String timestamp;
+    private final String user;
+    private final String timestamp;
 
     public Revision(String user, String timestamp) {
         this.user = user;

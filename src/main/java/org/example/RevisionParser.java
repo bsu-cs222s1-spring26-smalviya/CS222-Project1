@@ -1,7 +1,6 @@
 package org.example;
 
 import com.jayway.jsonpath.JsonPath;
-import com.jayway.jsonpath.JsonPathException;
 import com.jayway.jsonpath.PathNotFoundException;
 
 import java.util.ArrayList;
@@ -29,14 +28,26 @@ public class RevisionParser {
     }
 
 
-    public List<Revision> parse(String json) throws ParseException {
+    public List<Revision> parse(String json) throws WikiException {
         if (json == null || json.isEmpty()) {
             throw new ParseException("JSON is empty.");
         }
 
         try {
+            List<Object> missing = JsonPath.read(json, "$..missing");
+            if (!missing.isEmpty()) {
+                throw new NotFoundException("Page not found");
+            }
+        } catch (PathNotFoundException e) {
+        }
+
+        try {
             List<Map<String, String>> rawRevisions = JsonPath.read(json, "$.query.pages.*.revisions[*]");
             List<Revision> list = new ArrayList<>();
+
+            if (rawRevisions == null) {
+                return list;
+            }
 
             for (Map<String, String> raw : rawRevisions) {
                 String user = raw.get("user");

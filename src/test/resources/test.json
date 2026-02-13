@@ -1,0 +1,83 @@
+{
+  "continue": {
+    "rvcontinue": "20260112014711|1332469665",
+    "continue": "||"
+  },
+  "query": {
+    "redirects": [
+      {
+        "from": "Obama",
+        "to": "Barack Obama"
+      }
+    ],
+    "pages": {
+      "534366": {
+        "pageid": 534366,
+        "ns": 0,
+        "title": "Barack Obama",
+        "revisions": [
+          {
+            "user": "LWG",
+            "timestamp": "2026-02-08T02:25:53Z"
+          },
+          {
+            "user": "Gr\u00e5bergs Gr\u00e5a S\u00e5ng",
+            "timestamp": "2026-02-02T05:56:44Z"
+          },
+          {
+            "user": "Kpop777",
+            "timestamp": "2026-02-01T23:12:05Z"
+          },
+          {
+            "user": "ChomponU Pongsawet",
+            "timestamp": "2026-01-30T10:56:29Z"
+          },
+          {
+            "user": "Vycl1994",
+            "timestamp": "2026-01-29T00:14:14Z"
+          },
+          {
+            "user": "P. Waffleton",
+            "timestamp": "2026-01-19T18:32:36Z"
+          },
+          {
+            "user": "Huldra",
+            "timestamp": "2026-01-16T22:36:43Z"
+          },
+          {
+            "user": "Muboshgu",
+            "timestamp": "2026-01-12T20:43:29Z"
+          },
+          {
+            "user": "GRuban",
+            "timestamp": "2026-01-12T20:00:29Z"
+          },
+          {
+            "user": "IrisChronomia",
+            "timestamp": "2026-01-12T17:23:51Z"
+          },
+          {
+            "user": "Isjadd773",
+            "timestamp": "2026-01-12T16:40:26Z"
+          },
+          {
+            "user": "Isjadd773",
+            "timestamp": "2026-01-12T16:35:33Z"
+          },
+          {
+            "user": "IrisChronomia",
+            "timestamp": "2026-01-12T06:25:04Z"
+          },
+          {
+            "user": "IrisChronomia",
+            "timestamp": "2026-01-12T06:23:04Z"
+          },
+          {
+            "user": "IrisChronomia",
+            "timestamp": "2026-01-12T06:20:13Z"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 public class Requester {
 
     private static final String Web = "https://en.wikipedia.org/w/api.php";
-    private static final int numbersOfRevisionRetured = 15;
+    private static final int numbersOfRevisionReturned = 15;
 
     private final HttpClient httpClient = HttpClient.newHttpClient();
 
@@ -28,7 +28,7 @@ public class Requester {
                 + "&prop=revisions"
                 + "&titles=" + encoded
                 + "&rvprop=timestamp%7Cuser"
-                + "&rvlimit=" + numbersOfRevisionRetured
+                + "&rvlimit=" + numbersOfRevisionReturned
                 + "&redirects";
 
         HttpRequest request = HttpRequest.newBuilder()

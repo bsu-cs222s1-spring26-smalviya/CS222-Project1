@@ -4,7 +4,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
+
 import javafx.stage.Stage;
 
 public class SearchController {

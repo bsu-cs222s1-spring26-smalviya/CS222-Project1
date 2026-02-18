@@ -34,7 +34,7 @@ javafx {
 
 application {
     // If you have module-info.java, also set mainModule below.
-    mainClass.set("org.example.Output")
-    mainModule.set("org.example")
+    mainClass.set("org.example.Main")
+   // mainModule.set("org.example")
     // mainModule.set("edu.bsu.cs") // <- uncomment if you have a module-info.java named 'module edu.bsu.cs { ... }'
 }

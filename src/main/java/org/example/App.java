@@ -40,7 +40,7 @@ public class App extends Application {
                 alert.setHeaderText("Error: empty title");
                 alert.setContentText("Please provide an article name.");
                 alert.showAndWait();
-                statusLabel.setText("Error: empty title");
+                statusLabel.setText("Please provide an article name.");
                 return;
             }
 

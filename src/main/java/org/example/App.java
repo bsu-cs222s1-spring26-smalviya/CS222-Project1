@@ -93,7 +93,16 @@ public class App extends Application {
                 String msg = (ex == null ? "unknown error" : ex.getMessage());
                 statusLabel.setText("Error: " + msg);
                 outputArea.appendText("[ERROR] " + msg + "\n");
-            });
+
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Network connection required");
+                alert.setContentText(msg);
+                alert.showAndWait();
+
+                searchBtn.setDisable(false);
+                clearBtn.setDisable(false);
+                titleField.setDisable(false);
 
             new Thread(task).start();
         });

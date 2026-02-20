@@ -103,7 +103,7 @@ public class App extends Application {
                 searchBtn.setDisable(false);
                 clearBtn.setDisable(false);
                 titleField.setDisable(false);
-
+            });
             new Thread(task).start();
         });
 

@@ -3,10 +3,8 @@ package org.example;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import javafx.scene.Parent;
 import javafx.stage.Stage;
 
 
@@ -30,6 +28,7 @@ public class WelcomeController {
         nextBtn.setOnAction(e -> {
             SearchController searchController = new SearchController(stage);
             Scene searchScene = new Scene(searchController.getView(), 800, 600);
+            searchScene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
             stage.setScene(searchScene);
         });
 

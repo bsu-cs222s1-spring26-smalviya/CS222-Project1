@@ -47,6 +47,9 @@ public class App extends Application {
             outputArea.clear();
             statusLabel.setText("Loading...");
 
+            searchBtn.setDisable(true);
+            clearBtn.setDisable(true);
+            titleField.setDisable(true);
 
             Task<Void> task = new Task<>() {
                 @Override
